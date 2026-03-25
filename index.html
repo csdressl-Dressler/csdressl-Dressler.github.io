@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arizona Fly Fishing: discover rivers, lakes, and fly patterns across Arizona for trout, bass, and more.">
+    <title>Arizona Fly Fishing :: Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Arizona Fly Fishing</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rivers.html">Rivers</a></li>
+                <li><a href="lakes.html">Lakes</a></li>
+                <li><a href="flies.html">Flies</a></li>
+            </ul>
+        </nav>
+
+        <div id="homehero" class="hero" role="img" aria-label="Fly fisherman casting in an Arizona river"></div>
+
+        <main>
+            <h2>Welcome to Arizona Fly Fishing</h2>
+            <p>
+                Arizona offers surprising variety for anglers: cold mountain streams with wild trout, desert reservoirs full of bass and catfish,
+                and high-country lakes that feel worlds away from the Sonoran lowlands. This site helps you learn where to go, what to tie on,
+                and how to plan a day on the water. Whether you are new to the sport or have waded these runs for years, you will find practical
+                ideas for your next trip.
+            </p>
+            <p>
+                Popular species include rainbow and brown trout in the upland creeks, largemouth and smallmouth bass in warm reservoirs,
+                and channel catfish in many public lakes. Seasonal flows and water temperatures change quickly in Arizona, so timing and fly choice
+                matter as much as location. Explore our Rivers and Lakes pages for access notes and seasonal tips, and visit
+                <a class="external" href="https://www.azflyshop.com/" target="_blank" rel="noopener noreferrer">AZ Fly Shop</a>
+                for regional reports and gear.
+            </p>
+
+            <div class="video-wrap">
+                <h3>On the water</h3>
+                <p>Below is a short clip from a recent outing. Use the controls to play or pause the video.</p>
+                <video controls width="640" poster="1.jpeg">
+                    <source src="fishing.mp4" type="video/mp4">
+                    <source src="fishing.mov" type="video/quicktime">
+                    <a href="fishing.mp4">Download the fishing video (MP4)</a>
+                </video>
+            </div>
+
+            <h2>Newsletter signup</h2>
+            <p>
+                Sign up for occasional email updates with hatch notes, water conditions, and fly suggestions tailored to Arizona waters.
+                Required fields are marked with an asterisk (*).
+            </p>
+            <form method="post" action="#">
+                <label for="newsName">* Name:</label>
+                <input type="text" id="newsName" name="newsName" required>
+
+                <label for="newsEmail">* Email:</label>
+                <input type="email" id="newsEmail" name="newsEmail" required>
+
+                <label for="newsExperience">* How long have you been fishing?</label>
+                <select id="newsExperience" name="newsExperience" required>
+                    <option value="">Choose one</option>
+                    <option value="beginner">Beginner (under 2 years)</option>
+                    <option value="intermediate">Intermediate (2–10 years)</option>
+                    <option value="expert">Expert (10+ years)</option>
+                </select>
+
+                <label for="newsComments">Comments or topics you want covered:</label>
+                <textarea id="newsComments" name="newsComments" rows="4" cols="40" placeholder="Optional feedback for the newsletter"></textarea>
+
+                <input type="submit" value="Join the list">
+            </form>
+        </main>
+
+        <footer>
+            Copyright &copy; 2026 Arizona Fly Fishing<br>
+            Questions? <a href="mailto:csdressl@asu.edu">csdressl@asu.edu</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+/* Arizona Fly Fishing — external stylesheet */
+
+:root {
+    --text: #13130f;
+    --background: #fcfcfb;
+    --primary: #968e76;
+    --secondary: #b6bda9;
+    --accent: #99a78d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: var(--secondary);
+    background-image: linear-gradient(to bottom, var(--background), var(--secondary));
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 0.5em 1em;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--accent);
+}
+
+h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    letter-spacing: 0.12em;
+    margin: 0;
+    padding: 0.4em 0;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: var(--secondary);
+    font-weight: bold;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid var(--accent);
+}
+
+nav a {
+    color: var(--text);
+    display: block;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+main {
+    background-color: var(--background);
+    display: block;
+    overflow: auto;
+    padding: 1.25em 1.5em 2em;
+}
+
+h2 {
+    color: var(--primary);
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-shadow: 1px 1px 0 var(--secondary);
+}
+
+h3 {
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.25em;
+}
+
+p {
+    line-height: 1.55;
+}
+
+a.external {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+a.external:hover {
+    color: var(--accent);
+}
+
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+}
+
+#homehero {
+    background-image: url("1.jpeg");
+}
+
+#riverhero {
+    background-image: url("2.jpeg");
+}
+
+#lakehero {
+    background-image: url("4.jpeg");
+}
+
+#flyhero {
+    background-image: url("3.jpeg");
+}
+
+.video-wrap {
+    margin: 1.25em 0;
+    max-width: 100%;
+}
+
+video {
+    border: 3px solid var(--secondary);
+    display: block;
+    margin: 0 auto 1em;
+    max-width: 100%;
+}
+
+.iframe-wrap {
+    margin: 1.25em 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.iframe-wrap iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+table {
+    border: 2px solid var(--primary);
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid var(--accent);
+    padding: 0.6em 0.75em;
+    text-align: left;
+}
+
+th {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+tr:nth-of-type(even) {
+    background-color: rgba(182, 189, 169, 0.25);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin: 1.5em 0;
+    max-width: 28em;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid var(--secondary);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.4em 0.5em;
+    width: 100%;
+}
+
+textarea {
+    min-height: 5em;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    align-self: flex-start;
+    background-color: var(--primary);
+    border: none;
+    color: var(--background);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.6em 1.25em;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent);
+}
+
+footer {
+    background-color: var(--background);
+    font-size: 0.85rem;
+    font-style: italic;
+    padding: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    color: var(--primary);
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+section.river-block,
+section.lake-block {
+    margin-bottom: 1.75em;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        border-bottom: none;
+        border-right: 1px solid var(--accent);
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    form {
+        display: grid;
+        gap: 0.75em 1em;
+        grid-template-columns: 10em 1fr;
+        max-width: 36em;
+    }
+
+    form label {
+        align-self: center;
+    }
+
+    input[type="submit"] {
+        grid-column: 2;
+        justify-self: start;
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper {
+        border: 1px solid var(--primary);
+        box-shadow: 4px 4px 12px rgba(19, 19, 15, 0.15);
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    .hero {
+        height: 360px;
+    }
+}
