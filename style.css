@@ -113,29 +113,6 @@ a.external:hover {
     color: var(--accent);
 }
 
-.hero {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 220px;
-}
-
-#homehero {
-    background-image: url("1.jpeg");
-}
-
-#riverhero {
-    background-image: url("2.jpeg");
-}
-
-#lakehero {
-    background-image: url("4.jpeg");
-}
-
-#flyhero {
-    background-image: url("3.jpeg");
-}
-
 .video-wrap {
     margin: 1.25em 0;
     max-width: 100%;
@@ -267,10 +244,6 @@ section.lake-block {
         border-right: none;
     }
 
-    .hero {
-        height: 300px;
-    }
-
     form {
         display: grid;
         gap: 0.75em 1em;
@@ -294,9 +267,5 @@ section.lake-block {
         box-shadow: 4px 4px 12px rgba(19, 19, 15, 0.15);
         margin: 0 auto;
         max-width: 960px;
-    }
-
-    .hero {
-        height: 360px;
     }
 }
